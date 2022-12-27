@@ -1,0 +1,9 @@
+.heigt-40{
+    height: 120px !important;
+}
+
+.container{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}

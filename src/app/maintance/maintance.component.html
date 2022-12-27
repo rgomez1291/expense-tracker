@@ -1,0 +1,49 @@
+<app-header [Title]="Title"></app-header>
+<div class="card-center">
+    <mat-card class="cardHome">
+        <mat-card-header class="text-center">
+            <mat-card-title>
+                <h3>Editar Registro</h3>
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+
+            <form (ngSubmit)="add_registro()">
+                <mat-form-field appearance="fill" class="width-100">
+                    <mat-label>Nombre</mat-label>
+                    <input matInput [(ngModel)]="new_nombre" [ngModelOptions]="{standalone: true}">
+                  </mat-form-field>
+                  <br>
+                  <mat-form-field appearance="fill" class="width-100">
+                    <mat-label>Tipo Registro</mat-label>
+                    <mat-select [(ngModel)]="new_tipoRegistro" [ngModelOptions]="{standalone: true}">
+                      <mat-option value="E">Egreso</mat-option>
+                      <mat-option value="I">Ingreso</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <br>
+                  <mat-form-field appearance="fill" class="width-100">
+                    <mat-label>Monto Presupuestado</mat-label>
+                    <input matInput type="number" [(ngModel)]="new_montoPre" [ngModelOptions]="{standalone: true}">
+                  </mat-form-field>
+                <br>
+                <mat-card-actions>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 text-end">
+                                <button mat-raised-button type="submit" color="accent">Guardar</button>
+                            </div>
+                            <div class="col-md-6 text-start">
+                                <button mat-raised-button (click)="cancelar()" color="warn">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </mat-card-actions>
+            </form>
+
+        </mat-card-content>
+    </mat-card>
+</div>
+
+<app-footer class="fixed-bottom"></app-footer>

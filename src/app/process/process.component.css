@@ -1,0 +1,36 @@
+.card-start{
+    background-color: rgb(255, 255, 255) !important;
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+.card-data{
+    background-color: rgb(255, 255, 255) !important;
+    width: 60%;
+    
+}
+
+.form-fields {
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.width-100{
+    width: 100% !important;
+}
+
+
+.card-center{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.btn{
+    width: 93px;
+}

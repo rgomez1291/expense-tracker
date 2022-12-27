@@ -1,0 +1,23 @@
+.form-fields {
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.width-100{
+    width: 100% !important;
+}
+
+
+.card-center{
+    height: 60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    text-decoration-color: aliceblue;
+}

@@ -1,0 +1,28 @@
+<app-header [Title]="Title"></app-header>
+<div class="card-center">
+    <mat-card>
+        <mat-card-content>
+
+            <form (ngSubmit)="sendForm()">
+                <mat-form-field appearance="fill" class="width-20">
+                    <mat-label>Monto presupuestado</mat-label>
+                    <input matInput [(ngModel)]="montoPre" [ngModelOptions]="{standalone: true}">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="width-20">
+                    <mat-label>Divisa</mat-label>
+                    <mat-select [(ngModel)]="divisa" [ngModelOptions]="{standalone: true}">
+                        <mat-option value="USD">Dolar</mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-card-actions>
+                    <button mat-raised-button type="submit" color="primary">Agregar</button>
+                </mat-card-actions>
+            </form>
+
+        </mat-card-content>
+    </mat-card>
+</div>
+
+<app-footer class="fixed-bottom"></app-footer>
